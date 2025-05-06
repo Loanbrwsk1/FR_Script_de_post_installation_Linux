@@ -4,7 +4,7 @@ echo ""
 sudo ./config-zorin/config-zorin.sh
 echo ""
 
-if zenity --question --title="Configuration" --text="Voulez-vous lancer le script de configuration de GNOME (voir README-custom.txt) ?"
+if zenity --question --title="Configuration" --text="Voulez-vous lancer le script de configuration de GNOME (voir la documentation) ?"
 then
         echo -e "\033[1;32mConfiguration de GNOME\033[0m"
     	./config-zorin/gnome-customization.sh

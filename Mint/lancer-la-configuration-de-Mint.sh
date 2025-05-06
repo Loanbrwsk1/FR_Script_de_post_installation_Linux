@@ -2,7 +2,7 @@ echo ""
 sudo ./config-lm/config-lm.sh
 echo ""
 
-if zenity --question --title="Configuration" --text="Voulez-vous lancer le script de configuration de Cinnamon (voir README-custom.txt) ?"
+if zenity --question --title="Configuration" --text="Voulez-vous lancer le script de configuration de Cinnamon (voir la documentation) ?"
 then
         echo -e "\033[1;32mConfiguration de Cinnamon\033[0m"
 	    ./config-lm/cinnamon-customization.sh
