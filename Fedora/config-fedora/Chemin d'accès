@@ -1,0 +1,3 @@
+#! /bin/bash
+
+zenity --info --title "Chemin d'accès" --text="$PWD/$1"
