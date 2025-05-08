@@ -25,11 +25,11 @@ maj(){
 install_app(){
 	echo -e "\033[1;32m==========Installation des logiciels==========\033[0m"
 	echo ""
-	echo -e "\033[1;32mInstallation des flatpak\033[0m"
+	echo -e "\033[1;32mInstallation des Flatpak\033[0m"
 	echo ""
 	flatpak install flathub -y $FLATPAKAPP
 	echo ""
-	echo -e "\033[1;32mInstallation de logiciels\033[0m"
+	echo -e "\033[1;32mInstallation des logiciels\033[0m"
 	echo ""
 	apt install -y $ADDAPP
 	echo ""

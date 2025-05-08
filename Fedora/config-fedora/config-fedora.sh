@@ -8,7 +8,7 @@ ADDAPP="git aspell-fr amd-ucode-firmware gnome-tweaks file-roller dconf-editor g
 
 
 config_dnf(){
-	echo -e "\033[1;32m==========Configuration de dnf==========\033[0m"
+	echo -e "\033[1;32m==========Configuration de DNF==========\033[0m"
 	if [[ $(grep -c 'fastestmirror=' /etc/dnf/dnf.conf) -lt 1 ]]
 	then
 		echo "fastestmirror=true" >> /etc/dnf/dnf.conf
@@ -33,7 +33,7 @@ maj(){
 	echo ""
     dpkg --configure -a
     echo ""
-	echo "\033[1;32mMise à jour de flatpak\033[0m"
+	echo "\033[1;32mMise à jour de Flatpak\033[0m"
 	echo ""
 	flatpak update -y
 	echo ""
@@ -47,7 +47,7 @@ maj(){
 }
 
 install_app(){
-	echo -e "\033[1;32m==========Installation d'applications==========\033[0m"
+	echo -e "\033[1;32m==========Installation de logiciels==========\033[0m"
 	echo ""
 	echo -e "\033[1;32mInstallation des composants RPM Fusion\033[0m"
 	echo ""
@@ -69,7 +69,7 @@ install_app(){
 	echo ""
 	flatpak install flathub -y $FLATPAKAPP
 	echo ""
-	echo -e "\033[1;32mInstallation des logiciels Fedora\033[0m"
+	echo -e "\033[1;32mInstallation des logiciels\033[0m"
 	echo ""
 	dnf install -y $ADDAPP
 	echo ""

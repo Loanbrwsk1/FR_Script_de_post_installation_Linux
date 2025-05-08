@@ -8,7 +8,7 @@ maj(){
 	echo ""
     dpkg --configure -a
     echo ""
-	echo -e "\033[1;32mMise à jour de flatpak\033[0m"
+	echo -e "\033[1;32mMise à jour de Flatpak\033[0m"
 	echo ""
 	flatpak update -y
 	echo ""
@@ -25,7 +25,7 @@ maj(){
 install_app(){
 	echo -e "\033[1;32m==========Installation des logiciels==========\033[0m"
 	echo ""
-	echo -e "\033[1;32mInstallation des flatpak\033[0m"
+	echo -e "\033[1;32mInstallation des Flatpak\033[0m"
 	echo ""
 	flatpak install flathub -y $FLATPAKAPP
 	echo ""

@@ -24,7 +24,7 @@ then
 fi
 echo -e "\033[1;32m==========Copies des fichiers utiles==========\033[0m"
 if [[ $(grep -c "fmaj=" ~/.bashrc) -lt 1 ]] ; then
-		echo '
+	echo '
 
 alias maj="sudo apt update && sudo apt full-upgrade -y"
 alias install="sudo apt install -y"
@@ -41,9 +41,6 @@ echo ""
 echo -e "\033[1;32m==========Personnalisation de Cinnamon==========\033[0m"
 
 echo "Personnalisation du Bureau"
-echo "Vue sur les secondes"
-gsettings set org.cinnamon.desktop.interface  clock-show-seconds "true"
-echo "Vue sur la date"
-gsettings set org.cinnamon.desktop.interface  clock-show-date "true"
-
-echo "Personnalisation terminée"
+echo "Modification du format de l'heure"
+gsettings set org.cinnamon.desktop.interface clock-show-seconds "true"
+gsettings set org.cinnamon.desktop.interface clock-show-date "true"

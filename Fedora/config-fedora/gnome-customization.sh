@@ -76,5 +76,3 @@ gsettings set org.gnome.TextEditor show-line-numbers true
 echo "Activation de Dash-to-Dock"
 
 gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
-
-echo "Personnalisation terminée."

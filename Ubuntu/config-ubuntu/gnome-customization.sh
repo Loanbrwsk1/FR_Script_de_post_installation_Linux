@@ -57,5 +57,3 @@ gsettings set org.gnome.desktop.privacy old-files-age "30"
 echo "Configuration de GNOME Text Editor"
 gsettings set org.gnome.TextEditor highlight-current-line false
 gsettings set org.gnome.TextEditor show-line-numbers true
-
-echo "Personnalisation terminée."
