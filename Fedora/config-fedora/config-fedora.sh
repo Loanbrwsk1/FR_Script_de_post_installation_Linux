@@ -51,19 +51,19 @@ install_app(){
 	echo ""
 	echo -e "\033[1;32mInstallation des composants RPM Fusion\033[0m"
 	echo ""
-	dnf install -y $RPMFUSIONCOMP
+	dnf install --skip-unavailable -y $RPMFUSIONCOMP
 	echo ""
 	echo -e "\033[1;32mInstallation RPM Fusion Free\033[0m"
 	echo ""
-	dnf install -y "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
+	dnf install --skip-unavailable -y "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
 	echo ""
 	echo -e "\033[1;32mInstallation RPM Fusion NonFree\033[0m"
 	echo ""
-	dnf install -y "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+	dnf install --skip-unavailable -y "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 	echo ""
 	echo -e "\033[1;32mInstallation des Codecs\033[0m"
 	echo ""
-	dnf install -y $CODEC
+	dnf install --skip-unavailable -y $CODEC
 	echo ""
 	echo -e "\033[1;32mInstallation des logiciels Flatpak\033[0m"
 	echo ""
@@ -71,11 +71,11 @@ install_app(){
 	echo ""
 	echo -e "\033[1;32mInstallation des logiciels\033[0m"
 	echo ""
-	dnf install -y $ADDAPP
+	dnf install --skip-unavailable -y $ADDAPP
 	echo ""
 	echo -e "\033[1;32mInstallation des composants GNOME\033[0m"
 	echo ""
-	dnf install -y $GNOMECOMP
+	dnf install --skip-unavailable -y $GNOMECOMP
 }
 
 main(){
