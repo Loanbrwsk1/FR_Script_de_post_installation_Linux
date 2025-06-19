@@ -8,8 +8,8 @@ dynamic_wallpaper=$?
 if [ $wallpaper -eq 0 ]
 then
     git clone https://github.com/Loanbrwsk1/Wallpapers.git 
-    rm -fr ./Wallpapers/.git/
-    mv ./Wallpapers/ ~/Images/
+    mv ./Wallpapers/* ~/.local/share/backgrounds/
+    rm -fr ./Wallpapers/
 fi
 
 if [ $dynamic_wallpaper -eq 0 ]
