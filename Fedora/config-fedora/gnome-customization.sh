@@ -1,6 +1,6 @@
 #!/bin/bash
 
-zenity --question --title="Fonds d'écran" --text="Voulez-vous des fonds d'écran supplémentaires ?"
+zenity --question --title="Fonds d'écran" --text="Voulez-vous des fonds d'écran supplémentaires ? (peut prendre du temps)"
 wallpaper=$?
 zenity --question --title="Fonds d'écran dynamiques" --text="Voulez-vous des fonds d'écran dynamiques supplémentaires ?"
 dynamic_wallpaper=$?
@@ -8,7 +8,9 @@ dynamic_wallpaper=$?
 if [ $wallpaper -eq 0 ]
 then
     git clone https://github.com/Loanbrwsk1/Wallpapers.git 
-    mv ./Wallpapers/* ~/.local/share/backgrounds/
+    cd Wallpapers
+    mv ./wallpapers/* ~/.local/share/backgrounds/
+    cd ..
     rm -fr ./Wallpapers/
 fi
 
